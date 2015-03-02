@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EF851557-C6AC-417B-A3D8-8184D507CC25</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Odessit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A6672C5715E712579F290239A0E8B5C4CA45A7F1</key>
+		<string>https://github.com/milkyNik/Odessit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Odessit.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A6672C5715E712579F290239A0E8B5C4CA45A7F1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/milkyNik/Odessit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A6672C5715E712579F290239A0E8B5C4CA45A7F1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A6672C5715E712579F290239A0E8B5C4CA45A7F1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Odessit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
