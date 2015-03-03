@@ -13,6 +13,7 @@ class Odessit {
         
         let name = "Odessit"
         var countNoQuestion = 0
+        var power = true
     
         let otherAnswers = [
             "Я тебя не понял!",
@@ -46,6 +47,19 @@ class Odessit {
             
             let inputString = input()
             var string = inputString.componentsSeparatedByString(" ")
+            
+            if (inputString.rangeOfString("-help") != nil) {
+                println("\nHELP:\n")
+                println("-exit - прекратить диалог\n-help - вызвать справку")
+                return "Чем я могу быть полезен?"
+            }
+            
+            if (inputString.rangeOfString("-exit") != nil) {
+                power = false
+                return "До свидания. Приятно было поболтать!"
+            }
+            
+            
             var count = 0
             
             var rus = true
@@ -154,7 +168,12 @@ class Odessit {
             
             let stringAnswer = usersQuestions()
             println("\n" + "\(name): " + stringAnswer + "\n")
-            chat()
+            
+            if power {
+                
+               chat()
+                
+            }
         }
         
     init(){
