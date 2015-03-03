@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		889ECEC21AA505B300CCE28A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889ECEC11AA505B300CCE28A /* main.swift */; };
+		88AA40691AA61E9200BA25CB /* Odessit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA40681AA61E9200BA25CB /* Odessit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		889ECEBE1AA505B300CCE28A /* Odessit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Odessit; sourceTree = BUILT_PRODUCTS_DIR; };
 		889ECEC11AA505B300CCE28A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		88AA40681AA61E9200BA25CB /* Odessit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Odessit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				889ECEC11AA505B300CCE28A /* main.swift */,
+				88AA40681AA61E9200BA25CB /* Odessit.swift */,
 			);
 			path = Odessit;
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				889ECEC21AA505B300CCE28A /* main.swift in Sources */,
+				88AA40691AA61E9200BA25CB /* Odessit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +237,7 @@
 				889ECEC71AA505B300CCE28A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
