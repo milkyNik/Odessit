@@ -48,17 +48,21 @@ class Odessit {
             let inputString = input()
             var string = inputString.componentsSeparatedByString(" ")
             
-            if (inputString.rangeOfString("-help") != nil) {
+            if inputString.hasPrefix("-help") || inputString.hasPrefix("-h") {
                 println("\nHELP:\n")
-                println("-exit - прекратить диалог\n-help - вызвать справку")
+                println("-exit(-e) - прекратить диалог\n-help(-h) - вызвать справку")
                 return "Чем я могу быть полезен?"
             }
-            
+            /*
             if (inputString.rangeOfString("-exit") != nil) {
                 power = false
                 return "До свидания. Приятно было поболтать!"
             }
-            
+            */
+            if inputString.hasPrefix("-exit") || inputString.hasPrefix("-e") {
+                power = false
+                return "До свидания. Приятно было поболтать!"
+            }
             
             var count = 0
             
