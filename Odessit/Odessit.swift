@@ -39,12 +39,14 @@ class Odessit {
             
             var keyboard = NSFileHandle.fileHandleWithStandardInput()
             var inputData = keyboard.availableData
+            
             if NSString(data: inputData, encoding:NSUTF8StringEncoding) != nil {
+                
                 return NSString(data: inputData, encoding:NSUTF8StringEncoding)!
+                
             }
             
-          return ""
-            
+            return ""
             
         }
     
@@ -58,12 +60,7 @@ class Odessit {
                 println("-exit(-e) - прекратить диалог\n-help(-h) - вызвать справку")
                 return "Чем я могу быть полезен?"
             }
-            /*
-            if (inputString.rangeOfString("-exit") != nil) {
-                power = false
-                return "До свидания. Приятно было поболтать!"
-            }
-            */
+            
             if inputString.hasPrefix("-exit") || inputString.hasPrefix("-e") {
                 power = false
                 return "До свидания. Приятно было поболтать!"
@@ -76,7 +73,9 @@ class Odessit {
             var number = false
             
             for ch in inputString.lowercaseString {
+                
                 switch ch {
+            
                 case "а"..."я":
                     rus = true
                 case "a"..."z":
@@ -86,6 +85,7 @@ class Odessit {
                 case "0"..."9":
                     number = true
                 default:break
+                    
                 }
             }
             
@@ -124,9 +124,9 @@ class Odessit {
                     
                     var questionString = "А "
                         
-                    for str in string {
-                        questionString += str + " "
-                    }
+                        for str in string {
+                            questionString += str + " "
+                        }
                         
                     return questionString
                     
@@ -141,9 +141,9 @@ class Odessit {
                     
                     questionString += str + " "
                     
-                    for str in string {
-                        questionString += str + " "
-                    }
+                        for str in string {
+                            questionString += str + " "
+                        }
                     
                     return questionString
                     
@@ -154,20 +154,21 @@ class Odessit {
                     
                     var questionString = "А "
                     
-                    for str in string {
-                        questionString += str + " "
-                    }
+                        for str in string {
+                            questionString += str + " "
+                        }
                     
                     return questionString
                     
                 default:break
-                }
+                    
+                    }
                 
                count++
-            }
+                    
+                }
                 
             }
-            
             
             return otherAnswers[Int(arc4random() % 8)]
             
@@ -188,5 +189,4 @@ class Odessit {
     init(){
         println("Меня зовут \(name).\nХорошенько подумай, перед тем как задавать мне вопросы!\n")
     }
-    
 }
