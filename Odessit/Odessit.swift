@@ -17,14 +17,19 @@ class Odessit {
     
         let otherAnswers = [
             "Я тебя не понял!",
-            "Может тебе стоит отдохнуть?",
+            "Может тебе стоит подумать над вопросом?",
+            "Кто занимался твоим воспитанием?",
+            "Хватит болтать! Спрашивай по-существу!",
             "Попробуй сказать что-то более оригинальное!",
+            "Бла-бла-бла!",
+            "Ты тратишь мое время!",
             "Банальщина!",
             "Говори по-русски.",
             "Не надо меня цифрами грузить!"]
     
         let conversation = [
             "Иди советуй кому-нибудь другому!",
+            "Я слышу агрессию в голосе. Или мне показалось?",
             "Не надо меня пытаться унизить!",
             "Это разве вопрос?",
             "В следующий раз думай, что говоришь!",
@@ -45,7 +50,7 @@ class Odessit {
     
         func usersQuestions() -> String {
             
-            let inputString = input()
+            let inputString = input().lowercaseString
             var string = inputString.componentsSeparatedByString(" ")
             
             if inputString.hasPrefix("-help") || inputString.hasPrefix("-h") {
@@ -86,25 +91,25 @@ class Odessit {
             
             if !rus {
                 
-                return otherAnswers[4]
+                return otherAnswers[8]
                 
             } else if !question {
                 
                 if countNoQuestion < 3 {
                     
                     countNoQuestion++
-                    return conversation[Int(arc4random() % 4)]
+                    return conversation[Int(arc4random() % 5)]
                     
                 } else {
                     
                     countNoQuestion = 0
-                    return conversation[4]
+                    return conversation[5]
                     
                 }
                 
             } else if number {
                 
-                return otherAnswers[5]
+                return otherAnswers[9]
                 
             } else {
                 
@@ -164,7 +169,7 @@ class Odessit {
             }
             
             
-            return otherAnswers[Int(arc4random() % 4)]
+            return otherAnswers[Int(arc4random() % 8)]
             
         }
         
