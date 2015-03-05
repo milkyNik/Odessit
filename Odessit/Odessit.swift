@@ -12,8 +12,9 @@ import Foundation
 class Odessit {
         
         let name = "Odessit"
-        var countNoQuestion = 0
-        var power = true
+        var countNoQuestion = 0 // the number of claims
+        var power = true // exit
+        var lastQuestion = "" // repetition
     
         let otherAnswers = [
             "Я тебя не понял!",
@@ -25,7 +26,8 @@ class Odessit {
             "Ты тратишь мое время!",
             "Банальщина!",
             "Говори по-русски.",
-            "Не надо меня цифрами грузить!"]
+            "Не надо меня цифрами грузить!",
+            "Ты повторяешься!"]
     
         let conversation = [
             "Иди советуй кому-нибудь другому!",
@@ -66,8 +68,17 @@ class Odessit {
                 return "До свидания. Приятно было поболтать!"
             }
             
-            var count = 0
+            if inputString == lastQuestion {
+                
+                return otherAnswers[10]
+                
+            } else {
+                
+                lastQuestion = inputString
+                
+            }
             
+            var count = 0
             var rus = true
             var question = true
             var number = false
